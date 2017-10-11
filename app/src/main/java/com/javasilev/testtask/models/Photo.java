@@ -1,5 +1,7 @@
 package com.javasilev.testtask.models;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
 /**
@@ -7,7 +9,7 @@ import com.google.gson.annotations.SerializedName;
  */
 
 @SuppressWarnings({"unused", "SpellCheckingInspection"})
-public class Photo {
+public class Photo implements Serializable {
 
     @SerializedName("albumId")
     private int mAlbumid;

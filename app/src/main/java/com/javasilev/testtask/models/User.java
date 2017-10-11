@@ -1,5 +1,7 @@
 package com.javasilev.testtask.models;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
 /**
@@ -7,7 +9,7 @@ import com.google.gson.annotations.SerializedName;
  */
 
 @SuppressWarnings({"WeakerAccess", "unused"})
-public class User {
+public class User implements Serializable {
 
     @SerializedName("id")
     private int mId;

@@ -1,9 +1,11 @@
 package com.javasilev.testtask.models;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
 @SuppressWarnings({"WeakerAccess", "unused"})
-public class Geo {
+public class Geo implements Serializable {
     @SerializedName("lat")
     private String mLat;
     @SerializedName("lng")

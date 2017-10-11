@@ -1,9 +1,11 @@
 package com.javasilev.testtask.models;
 
+import java.io.Serializable;
+
 import com.google.gson.annotations.SerializedName;
 
 @SuppressWarnings({"WeakerAccess", "unused"})
-public class Company {
+public class Company implements Serializable {
     @SerializedName("name")
     private String mName;
     @SerializedName("catchPhrase")
