@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@+id/item_todo_card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/tiny"
+    android:layout_marginLeft="@dimen/minor"
+    android:layout_marginRight="@dimen/minor"
+    android:layout_marginTop="@dimen/tiny"
+    android:orientation="vertical"
+    app:cardCornerRadius="2dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/modest">
+        
+        <TextView
+            android:id="@+id/item_todo_card_text_view_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/minor"
+            android:paddingTop="@dimen/minor"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            tools:text="Todos" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/minor"
+                android:paddingLeft="@dimen/tiny"
+                android:text="@string/label_id"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+            
+            <TextView
+                android:id="@+id/item_todo_card_text_view_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/minor"
+                android:layout_weight="1"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                tools:ignore="RtlHardcoded"
+                tools:text="1" />
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/item_todo_card_text_view_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/minor"
+            android:paddingTop="@dimen/modest"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            tools:drawableLeft="@drawable/ic_check_box_black_24dp"
+            tools:text="vrbkjehbvhjre vbhejrhvbher bvhjerbvhjervbj" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

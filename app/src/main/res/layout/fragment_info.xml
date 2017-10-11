@@ -1,0 +1,200 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/rich"
+        android:paddingRight="@dimen/rich">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/rich"
+            android:drawablePadding="-66dp"
+            android:drawableTop="@drawable/ic_person_black_24dp"
+            android:gravity="center"
+            android:paddingBottom="@dimen/tiny"
+            android:text="@string/text_contacts"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@color/colorPrimary" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/minor"
+            android:layout_marginRight="@dimen/rich"
+            android:background="@drawable/contacts_textview_bg"
+            tools:ignore="RtlHardcoded">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/minor"
+                android:text="@string/label_name"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textColor="@android:color/white"
+                tools:ignore="RtlHardcoded" />
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:padding="@dimen/minor"
+                android:text="@string/text_name"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/minor"
+            android:layout_marginLeft="@dimen/rich"
+            android:background="@drawable/contacts_textview_bg"
+            tools:ignore="RtlHardcoded">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/minor"
+                android:text="@string/label_address"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textColor="@android:color/white"
+                tools:ignore="RtlHardcoded" />
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:padding="@dimen/minor"
+                android:text="@string/text_address"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/minor"
+            android:layout_marginRight="@dimen/rich"
+            android:background="@drawable/contacts_textview_bg"
+            tools:ignore="RtlHardcoded">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/minor"
+                android:text="@string/label_email"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textColor="@android:color/white"
+                tools:ignore="RtlHardcoded" />
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoLink="email"
+                android:fontFamily="monospace"
+                android:padding="@dimen/minor"
+                android:text="@string/text_email"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/minor"
+            android:layout_marginLeft="@dimen/rich"
+            android:background="@drawable/contacts_textview_bg"
+            tools:ignore="RtlHardcoded">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/minor"
+                android:text="@string/label_telegram"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textColor="@android:color/white"
+                tools:ignore="RtlHardcoded" />
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoLink="web"
+                android:fontFamily="monospace"
+                android:padding="@dimen/minor"
+                android:text="@string/text_telegram"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/minor"
+            android:layout_marginRight="@dimen/rich"
+            android:background="@drawable/contacts_textview_bg"
+            tools:ignore="RtlHardcoded">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/minor"
+                android:text="@string/label_skype"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textColor="@android:color/white"
+                tools:ignore="RtlHardcoded" />
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:padding="@dimen/minor"
+                android:text="@string/text_skype"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rich"
+            android:background="@drawable/contacts_textview_bg"
+            tools:ignore="RtlHardcoded">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/minor"
+                android:text="@string/label_phone"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textColor="@android:color/white"
+                tools:ignore="RtlHardcoded" />
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoLink="phone"
+                android:fontFamily="monospace"
+                android:gravity=""
+                android:padding="@dimen/minor"
+                android:text="@string/text_phone"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

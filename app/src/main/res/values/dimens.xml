@@ -1,0 +1,7 @@
+<resources>
+    <!-- base screen margins/paddings -->
+    <dimen name="tiny">4dp</dimen>
+    <dimen name="minor">8dp</dimen>
+    <dimen name="modest">16dp</dimen>
+    <dimen name="rich">32dp</dimen>
+</resources>

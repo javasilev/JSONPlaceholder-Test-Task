@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">JSONPlaceholder Test App</string>
+    <string name="button_get">get</string>
+    <string name="label_id">ID:</string>
+    <string name="label_tab_cards">Cards</string>
+    <string name="label_tab_contacts">Contacts</string>
+    <string name="label_posts">Posts</string>
+    <string name="label_comments">Comments</string>
+    <string name="label_users">Users</string>
+    <string name="label_todos">Todos</string>
+    <string name="label_photos">Photos</string>
+    <string name="text_updated">Updated.</string>
+    <string name="text_contacts">Contacts</string>
+    <string name="text_name">Aleksei Vasilev</string>
+    <string name="label_name">Name</string>
+    <string name="label_email">E-mail</string>
+    <string name="text_email">aleksei@javasilev.ru</string>
+    <string name="label_telegram">Telegram</string>
+    <string name="text_telegram">https://t.me/wasseely</string>
+    <string name="label_skype">Skype</string>
+    <string name="text_skype">wasseely</string>
+    <string name="label_phone">Phone</string>
+    <string name="text_phone">+7 000 000–00–00</string>
+    <string name="label_address">Address</string>
+    <string name="text_address">Saint Petersburg, Russia</string>
+    <string name="text_exceeding_warning" formatted="false">The %s id should be between 1 and %d.</string>
+</resources>
