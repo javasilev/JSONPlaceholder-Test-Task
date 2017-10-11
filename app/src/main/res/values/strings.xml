@@ -24,4 +24,5 @@
     <string name="label_address">Address</string>
     <string name="text_address">Saint Petersburg, Russia</string>
     <string name="text_exceeding_warning" formatted="false">The %s id should be between 1 and %d.</string>
+    <string name="text_image_id">ID: %d</string>
 </resources>

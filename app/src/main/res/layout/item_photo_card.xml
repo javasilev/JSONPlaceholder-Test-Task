@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/tiny"
     android:layout_marginLeft="@dimen/minor"
     android:layout_marginRight="@dimen/minor"
@@ -12,31 +12,54 @@
     android:orientation="vertical"
     app:cardCornerRadius="2dp">
     
-    <ImageView
-        android:id="@+id/item_photo_card_image_view_photo"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        tools:src="@android:drawable/btn_star_big_on"
-        tools:ignore="ContentDescription" />
-    
-    <TextView
-        android:id="@+id/item_photo_card_text_view_caption"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:paddingTop="@dimen/rich"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-        tools:text="Images" />
-    
-    <TextView
-        android:id="@+id/item_photo_card_text_view_body"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center_horizontal"
-        android:gravity="center"
-        android:padding="@dimen/modest"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
-        tools:text="vgfhbvjddf ghdbh gdbhj bghbdfh gbhdfjhbgjh bghfhfhj" />
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/modest"
+        android:paddingTop="@dimen/modest">
+        
+        <TextView
+            android:id="@+id/item_photo_card_text_view_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="@dimen/modest"
+            android:paddingLeft="@dimen/modest"
+            android:paddingTop="@dimen/minor"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            tools:ignore="RtlHardcoded,RtlSymmetry"
+            tools:text="Images" />
+        
+        <ImageView
+            android:id="@+id/item_photo_card_image_view_photo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/minor"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription"
+            tools:src="@android:drawable/btn_star_big_on" />
+        
+        <TextView
+            android:id="@+id/item_photo_card_text_view_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/modest"
+            android:paddingRight="@dimen/modest"
+            android:paddingTop="@dimen/modest"
+            android:text="@string/text_image_id"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+        
+        <TextView
+            android:id="@+id/item_photo_card_text_view_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/minor"
+            android:gravity="center_vertical"
+            android:padding="@dimen/modest"
+            tools:text="vgfhbvjddf ghdbh gdbhj bghbdfh gbhdfjhbgjh bghfhfhj" />
+    </LinearLayout>
+
 
 </android.support.v7.widget.CardView>

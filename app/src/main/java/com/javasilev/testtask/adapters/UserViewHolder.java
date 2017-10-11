@@ -39,6 +39,6 @@ public class UserViewHolder extends SimpleViewHolder<List<User>> {
     @Override
     public void bind(List<User> model, CollectionAdapter adapter) {
         mCaptionTextView.setText(R.string.label_users);
-        mUserList.setAdapter(new ArrayAdapter<>(mContext, android.R.layout.simple_list_item_1, model.toArray(new User[model.size()])));
+        mUserList.setAdapter(new ArrayAdapter<>(mContext, R.layout.item_user_list_card, R.id.item_user_text, model.toArray(new User[model.size()])));
     }
 }

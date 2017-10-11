@@ -22,7 +22,6 @@
             android:id="@+id/item_todo_card_text_view_caption"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:paddingBottom="@dimen/minor"
             android:paddingTop="@dimen/minor"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
@@ -39,6 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/minor"
                 android:paddingLeft="@dimen/tiny"
+                android:paddingTop="@dimen/minor"
                 android:text="@string/label_id"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
                 tools:ignore="RtlHardcoded,RtlSymmetry" />
@@ -47,7 +47,6 @@
                 android:id="@+id/item_todo_card_text_view_number"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/minor"
                 android:layout_weight="1"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
                 tools:ignore="RtlHardcoded"
@@ -58,9 +57,10 @@
             android:id="@+id/item_todo_card_text_view_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/minor"
             android:drawablePadding="@dimen/minor"
+            android:gravity="center_vertical"
             android:paddingTop="@dimen/modest"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
             tools:drawableLeft="@drawable/ic_check_box_black_24dp"
             tools:text="vrbkjehbvhjre vbhejrhvbher bvhjerbvhjervbj" />
     </LinearLayout>

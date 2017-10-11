@@ -22,10 +22,11 @@
             android:id="@+id/item_text_card_text_view_caption"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingBottom="@dimen/minor"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/modest"
             android:paddingTop="@dimen/minor"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textSize="24sp"
             tools:text="Posts" />
         
         <LinearLayout
@@ -63,8 +64,8 @@
             android:id="@+id/item_post_card_text_view_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/minor"
             android:paddingTop="@dimen/modest"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
             tools:text="vrbkjehbvhjre vbhejrhvbher bvhjerbvhjervbj" />
     </LinearLayout>
     

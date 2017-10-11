@@ -94,6 +94,6 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return "#" + getId() + ": " + getName() + " aka \"" + getUsername() + "\"";
+        return getName() + " aka \"" + getUsername() + "\"";
     }
 }

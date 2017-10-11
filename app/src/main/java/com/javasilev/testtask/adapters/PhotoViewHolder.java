@@ -29,6 +29,9 @@ public class PhotoViewHolder extends SimpleViewHolder<Photo> {
     @BindView(R.id.item_photo_card_text_view_caption)
     TextView mCaptionTextView;
 
+    @BindView(R.id.item_photo_card_text_view_id)
+    TextView mIdTextView;
+
     @BindView(R.id.item_photo_card_text_view_body)
     TextView mBodyTextView;
 
@@ -41,6 +44,7 @@ public class PhotoViewHolder extends SimpleViewHolder<Photo> {
     @Override
     public void bind(Photo photo, CollectionAdapter adapter) {
         mCaptionTextView.setText(R.string.label_photos);
+        mIdTextView.setText(mContext.getString(R.string.text_image_id, photo.getId()));
         mBodyTextView.setText(photo.getTitle());
         Picasso.with(mContext)
                 .load(photo.getUrl())
